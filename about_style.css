@@ -1,0 +1,125 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header styles */
+header {
+    background-color: #eee;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+
+/* Styling for the main content area */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* Styling for the about section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 4em;
+}
+
+.about h2 {
+    margin-top: 0;
+    font-size: 13pt;
+}
+
+/*.about img {*/
+/*  border-radius: 50%;*/
+/*  max-width: 200px;*/
+/*  margin-bottom: 2em;*/
+/*}*/
+
+/* Styling for the skills section */
+.skills {
+    margin-bottom: 4em;
+    justify-content: center;
+    /*align-items: center;*/
+    /*text-align: left;*/
+}
+
+.skills h2 {
+    margin-top: 0;
+    font-size: 13pt;
+}
+
+.skills p {
+    margin-bottom: 0.3em;
+    /*# Justify the text to left*/
+    /*text-align: left;*/
+}
+
+.skills a {
+    display: inline-block;
+    color: #000000;
+    font-weight: bold;
+    /*padding: 0.5em 1em;*/
+    margin-right: 0.1em;
+    /*margin-bottom: 1em;*/
+    text-decoration: none;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a {
+    margin: 1em;
+}
+
+.social-media img {
+    height: 2em;
+}
+
+.fa-envelope {
+  font-size: 15em; /* adjust the size as needed */
+}
+
+.social-media p {
+  color: #000000;
+}
