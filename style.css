@@ -189,3 +189,9 @@ footer {
 .social-media p {
   color: #000000;
 }
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}

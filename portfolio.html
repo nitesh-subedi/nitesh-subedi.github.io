@@ -2,9 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Nitesh Portfolio</title>
+    <link rel="stylesheet" href="about_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
+<!-- Main content area -->
+<main>
+    <!-- Experience section -->
+    <section class="skills">
+        <h1>Projects</h1>
+        <br>
+        <h2>Optimal Trajectory Generation For Autonomous Navigation Of Wheeled Robots</h2>
+        <p>Final year project for the completion of bachelor’s degree in Mechanical Engineering.
+            Path planning and trajectory generation for autonomous navigation of wheeled robots based on MPC.
+            ROS was used as main working architecture with embedded systems like Arduino and Raspberry Pi.
+        </p>
+        <a href="Final_Project_Report.pdf">View Project</a>
+        <!--        add an image-->
+        <div class="row">
+            <div class="column">
+                <img src="images/vandomega.png" alt="Trajectory Generation" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/xandyandtheta.png" alt="Trajectory Generation" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <br>
+        <h2>Design of full navigation stack based on MPC in ROS 2</h2>
+        <p>Design of full navigation stack based on MPC in ROS 2 for autonomous navigation of wheeled robots.
+            ROS 2 was used as main working architecture with embedded systems like Arduino and Raspberry Pi written in
+            Python with NUMBA acceleration.
+        </p>
+        <p>
+            CasADi framework with IPOPT solver used for the path optimization with fully customizable parameters.
+             Design of local planner as controller plugin for Controller Server in ROS 2 written in C++.
+        </p>
+        <br>
+        <h2>Robots for ABU ROBOCON</h2>
+        <p>In a lab facility provided by the university, I mentored for ABU Robocon 2021 in China and oversaw a team of
+            21
+            undergraduate students for the mechanical design and control team for ABU Robocon 2020, Fiji. I also worked
+            as a student team member for ABU-Robocon 2019, Mongolia, and ABU-Robocon 2018, Vietnam.
+        </p>
+        <!--        add an image-->
+        <!--                <div class="row">-->
+        <!--                    <div class="column">-->
+        <!--                        <img src="images/vandomega.png" alt="Trajectory Generation" style="width:100%">-->
+        <!--                    </div>-->
+        <!--                    <div class="column">-->
+        <!--                        <img src="images/xandyandtheta.png" alt="Trajectory Generation" style="width:100%">-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <br>
+        <h2>Design and Analysis of an Axial Flow Compressor</h2>
+        <p>Design and analysis of an axial flow compressor for a gas turbine engine. The compressor was designed for
+            the
+            given specifications and was analyzed for the performance of the compressor. The compressor was designed
+            using
+            the mean line method and was analyzed using the CFD software ANSYS Fluent.
+        </p>
+        <div class="row">
+            <div class="column">
+                <img src="images/AxialComp.png" alt="Trajectory Generation" style="width:200%">
+            </div>
+        </div>
+        <br>
+        <h2>Design and Control of Active Hydraulic Suspension System for Passenger Vehicles</h2>
+        <p>Design and control of an active hydraulic suspension system for passenger vehicles. The suspension system
+            was
+            designed using the kinematic and dynamic analysis of the suspension system. The control system was designed
+            using the PID controller and was simulated using ADAMS and MATLAB Simulink co-simulation.
+        </p>
+        <div class="row">
+            <div class="column">
+                <img src="images/susp.png" alt="Trajectory Generation" style="width:200%">
+            </div>
+        </div>
+        <br>
+        <h2>Model Predictive Control for Autonomous Trajectory Generation of UAV</h2>
+        <p>
+            Autonomous trajectory generation of UAV using MPC. The trajectory generation was done using the
+            kinematic and dynamic model of the UAV. The MPC controller was designed using the CasADi library in
+            MATLAB.
+        </p>
+        <a href="Project_Report_UAV.pdf">View Project</a>
+        <div class="row">
+            <div class="column">
+                <img src="images/uav_path.png" alt="Trajectory Generation" style="width:200%">
+            </div>
+        </div>
+        <br>
+        <h2>Design and implementation of autonomous environment exploration algorithm</h2>
+        <p>
+            Autonomous environment exploration algorithm for wheeled robots. The algorithm was designed using the
+            kinematic and dynamic model of the wheeled robot. The algorithm was implemented using ROS and Gazebo
+            simulation. Custom frontier exploration algorithm for autonomous map creation in an unknown environment for
+            ROS 2 written in Python with NUMBA acceleration.
+        </p>
+        <!--        <a href="Project_Report_UAV.pdf">View Project</a>-->
+        <!--        <div class="row">-->
+        <!--            <div class="column">-->
+        <!--                <img src="images/uav_path.png" alt="Trajectory Generation" style="width:200%">-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <br>
+        <h2>Design and implementation of a MPC controller for a quadcopter</h2>
+        <p>
+            Design and implementation of a MPC controller for a quadcopter. The MPC controller was designed using the
+            kinematic and dynamic model of the quadcopter. The MPC controller was implemented using ROS and Gazebo
+            simulation.
+        </p>
+        <br>
+        <h2>Design and implementation of person re-identification using YOLO, DeepSort and OpenCV</h2>
+        <p>
+            Designing a full pipeline to select a person to follow, follow the person in dynamic environment and
+            re-identify even if person goes out of frame, autonomously.
+        </p>
+    </section>
+
+</main>
+
+<!-- Footer area -->
+<footer>
+    <div class="social-media">
+        <a href="https://github.com/nitesh-subedi" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+        </a>
+        <a href="https://www.linkedin.com/in/nitesh-subedi" target="_blank">
+            <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn Logo">
+        </a>
+        <a href="https://www.facebook.com/nitesh.subedi.56" target="_blank">
+            <img src="https://www.vectorlogo.zone/logos/facebook/facebook-official.svg" alt="Facebook Logo">
+        </a>
+        <a href="mailto:subedinitesh43@gmail.com" target="_blank">
+            <img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="gmail-logo">
+        </a>
+        <p><i class="fa fa-phone"></i> +977-9846998395</p>
+
+    </div>
+</footer>
 </body>
 </html>
