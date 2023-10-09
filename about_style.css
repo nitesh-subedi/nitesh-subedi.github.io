@@ -137,3 +137,8 @@ footer {
   clear: both;
   display: table;
 }
+
+#links {
+    color: blue; /* Change 'blue' to the desired color for this specific link */
+    text-decoration: none; /* Remove underlines if necessary */
+}
