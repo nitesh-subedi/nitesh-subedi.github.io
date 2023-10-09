@@ -195,3 +195,34 @@ footer {
   width: 50%;
   padding: 5px;
 }
+
+/* Add this CSS to your styles.css file or within a <style> tag in your HTML file */
+
+/* Add this CSS to your styles.css file or within a <style> tag in your HTML file */
+
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Optionally, set a minimum height to center vertically */
+}
+
+.social-media {
+    max-width: 300px; /* Adjust the maximum width as needed */
+}
+
+.social-media a {
+    display: inline-block; /* Makes the icons display in a row */
+    margin: 10px; /* Adjust the margin as needed to space out the icons */
+}
+
+.social-media a img {
+    max-width: 40px; /* Adjust the maximum width for the icons */
+    height: auto; /* Maintains the aspect ratio of the icons */
+}
+
+.social-media p {
+    font-size: 16px; /* Adjust the font size for the contact information */
+}
