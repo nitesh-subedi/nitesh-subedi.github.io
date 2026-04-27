@@ -1,194 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nitesh Portfolio</title>
-    <link rel="stylesheet" href="about_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research & Projects | Nitesh Subedi</title>
+  <meta name="description" content="Research publications and engineering projects by Nitesh Subedi — robotics, autonomous navigation, RL, and computer vision.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <span class="nav-logo">Nitesh Subedi</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Research</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<!-- Main content area -->
-<main>
-    <!-- Experience section -->
-    <section class="skills">
-        <h1>Projects</h1>
-        <br>
-        <h2>Optimal Trajectory Generation For Autonomous Navigation Of Wheeled Robots</h2>
-        <p>Final year project for the completion of bachelor’s degree in Mechanical Engineering.
-            Path planning and trajectory generation for autonomous navigation of wheeled robots based on MPC.
-            ROS was used as main working architecture with embedded systems like Arduino and Raspberry Pi.
-        </p>
-        <a href="Final_Project_Report.pdf" id="links">View Project</a>
-        <!--        add an image-->
-        <div class="row">
-            <div class="column">
-                <img src="images/vandomega.png" alt="Trajectory Generation" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="images/xandyandtheta.png" alt="Trajectory Generation" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="images/robot_trajectory_at_different_timestamps.png" alt="Trajectory Generation" style="width:150%">
-            </div>
-        </div>
-        <br>
-        <br>
-        <h2>Design of full navigation stack based on MPC in ROS 2</h2>
-        <p>Design of full navigation stack based on MPC in ROS 2 for autonomous navigation of wheeled robots.
-            ROS 2 was used as main working architecture with embedded systems like Arduino and Raspberry Pi written in
-            Python with NUMBA acceleration.
-        </p>
-        <p>
-            CasADi framework with IPOPT solver used for the path optimization with fully customizable parameters.
-             Design of local planner as controller plugin for Controller Server in ROS 2 written in C++.
-        </p>
-        <!--        add an image-->
-        <div class="row">
-            <div class="column">
-                <img src="images/working_of_my_custom_navigation_system.png" alt="Trajectory Generation" style="width:150%">
-            </div>
-<!--            <div class="column">-->
-<!--                <img src="images/xandyandtheta.png" alt="Trajectory Generation" style="width:75%">-->
-<!--            </div>-->
-        </div>
-        <br>
-        <h2>Robots for ABU ROBOCON</h2>
-        <p>In a lab facility provided by the university, I mentored for ABU Robocon 2021 in China and oversaw a team of
-            21
-            undergraduate students for the mechanical design and control team for ABU Robocon 2020, Fiji. I also worked
-            as a student team member for ABU-Robocon 2019, Mongolia, and ABU-Robocon 2018, Vietnam.
-        </p>
-        <!--        add an image-->
-        <div class="row">
-            <div class="column">
-                <img src="images/robocon/before_leaving_for_robocon_2019_mongolia.JPG" alt="Trajectory Generation" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="images/robocon/me_in_mongolia_with_Rohm_Award.JPG" alt="Trajectory Generation" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="images/robocon/robocon_2019_robots.jpg" alt="Trajectory Generation" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="images/robocon/abu_robocon_2019_pit.jpg" alt="Trajectory Generation" style="width:89%">
-            </div>
-        </div>
+<div style="padding-top:5rem"></div>
 
-        <br>
-        <h2>Design and Analysis of an Axial Flow Compressor</h2>
-        <p>Design and analysis of an axial flow compressor for a gas turbine engine. The compressor was designed for
-            the
-            given specifications and was analyzed for the performance of the compressor. The compressor was designed
-            using
-            the mean line method and was analyzed using the CFD software ANSYS Fluent.
-        </p>
-        <div class="row">
-            <div class="column">
-                <img src="images/AxialComp.png" alt="Trajectory Generation" style="width:80%">
-            </div>
-        </div>
-        <br>
-        <h2>Design and Control of Active Hydraulic Suspension System for Passenger Vehicles</h2>
-        <p>Design and control of an active hydraulic suspension system for passenger vehicles. The suspension system
-            was
-            designed using the kinematic and dynamic analysis of the suspension system. The control system was designed
-            using the PID controller and was simulated using ADAMS and MATLAB Simulink co-simulation.
-        </p>
-        <div class="row">
-            <div class="column">
-                <img src="images/susp.png" alt="Trajectory Generation" style="width:100%">
-            </div>
-        </div>
-        <br>
-        <h2>Model Predictive Control for Autonomous Trajectory Generation of UAV</h2>
-        <p>
-            Autonomous trajectory generation of UAV using MPC. The trajectory generation was done using the
-            kinematic and dynamic model of the UAV. The MPC controller was designed using the CasADi library in
-            MATLAB.
-        </p>
-        <a href="Project_Report_UAV.pdf" id="links">View Project</a>
-        <div class="row">
-            <div class="column">
-                <img src="images/uav_path.png" alt="Trajectory Generation" style="width:200%">
-            </div>
-        </div>
-        <br>
-        <h2>Design and implementation of autonomous environment exploration algorithm</h2>
-        <p>
-            Autonomous environment exploration algorithm for wheeled robots. The algorithm was designed using the
-            kinematic and dynamic model of the wheeled robot. The algorithm was implemented using ROS and Gazebo
-            simulation. Custom frontier exploration algorithm for autonomous map creation in an unknown environment for
-            ROS 2 written in Python with NUMBA acceleration.
-        </p>
-        <!--        <a href="Project_Report_UAV.pdf">View Project</a>-->
-        <!--        <div class="row">-->
-        <!--            <div class="column">-->
-        <!--                <img src="images/uav_path.png" alt="Trajectory Generation" style="width:200%">-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <br>
-        <h2>Design and implementation of a MPC controller for a quadcopter</h2>
-        <p>
-            Design and implementation of a MPC controller for a quadcopter. The MPC controller was designed using the
-            kinematic and dynamic model of the quadcopter. The MPC controller was implemented using ROS and Gazebo
-            simulation.
-        </p>
-        <div class="row">
-            <div class="column">
-                <img src="images/quadcopter/quadcopter_xy.png" alt="Trajectory Generation" style="width:75%">
-            </div>
-            <div class="column">
-                <img src="images/quadcopter/quadcopter_xz.png" alt="Trajectory Generation" style="width:75%">
-            </div>
-            <div class="column">
-                <img src="images/quadcopter/quadcopter_yz.png" alt="Trajectory Generation" style="width:100%">
-            </div>
-        </div>
-        <br>
-        <h2>Design and implementation of person re-identification using YOLO, DeepSort and OpenCV</h2>
-        <p>
-            Designing a full pipeline to select a person to follow, follow the person in dynamic environment and
-            re-identify even if person goes out of frame, autonomously.
-        </p>
-        <div class="row">
-            <div class="column">
-                <img src="images/tracking.png" alt="Trajectory Generation" style="width:120%">
-            </div>
-        </div>
-    </section>
+<div class="section" style="padding-bottom:1rem">
+  <p class="section-tag">Portfolio</p>
+  <h1 class="section-title">Research &amp; Projects</h1>
+  <p class="section-desc">Publications, engineering projects, and research contributions spanning robotics, autonomous navigation, AI, and mechanical design.</p>
+</div>
 
-</main>
+<div class="section" style="padding-top:1rem">
+  <div class="portfolio-grid">
 
-<!-- Footer area -->
-<footer>
-    <div class="social-media">
-        <a href="https://github.com/nitesh-subedi" target="_blank">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
-        </a>
-        <a href="https://www.linkedin.com/in/nitesh-subedi" target="_blank">
-            <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn Logo">
-        </a>
-        <a href="https://www.facebook.com/nitesh.subedi.56" target="_blank">
-            <img src="https://www.vectorlogo.zone/logos/facebook/facebook-official.svg" alt="Facebook Logo">
-        </a>
-        <a href="mailto:subedinitesh43@gmail.com" target="_blank">
-            <img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="gmail-logo">
-        </a>
-        <p><i class="fa fa-phone"></i> +977-9846998395</p>
-
+    <!-- ── LCLA ── FEATURED -->
+    <div class="proj-card featured-proj">
+      <div class="proj-images">
+        <img src="images/lcla/abstract_fig.png" alt="LCLA Framework">
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta">
+          <span class="proj-badge">📄 arXiv Preprint</span>
+          <span class="proj-year">2025–2026</span>
+        </div>
+        <h2>LCLA: Language-Conditioned Latent Alignment for Vision-Language Navigation</h2>
+        <p>A framework for vision-language navigation that aligns sensory observations to a latent representation of an expert policy. The method decouples perception from control through a lightweight adapter, enabling expert behavior reuse across different sensing modalities and environments without full retraining. Achieves generalizable robot navigation guided by natural language instructions.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Vision-Language Models</span>
+          <span class="proj-tag">Robot Navigation</span>
+          <span class="proj-tag">Imitation Learning</span>
+          <span class="proj-tag">Latent Alignment</span>
+          <span class="proj-tag">PyTorch</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://nitesh-subedi.github.io/LCLA-website/" target="_blank" class="proj-link">🌐 Project Website</a>
+          <a href="https://arxiv.org/abs/2602.07629" target="_blank" class="proj-link">📄 arXiv Paper</a>
+        </div>
+      </div>
     </div>
+
+    <!-- ── Plant Manipulation ── FEATURED -->
+    <div class="proj-card featured-proj">
+      <div class="proj-images">
+        <img src="images/plant_manipulation/plants_updated.png" alt="Plant Manipulation RL">
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta">
+          <span class="proj-badge">📄 ICRA 2025</span>
+          <span class="proj-year">2024–2025</span>
+        </div>
+        <h2>Find the Fruit: Zero-Shot Sim2Real RL for Occlusion-Aware Plant Manipulation</h2>
+        <p>A sim2real reinforcement learning framework for autonomous harvesting in complex, occluded plant environments. Decouples high-level kinematic planning from low-level compliant control. Achieves an 86.7% success rate in exposing target fruits. The policy trains entirely in simulation and transfers zero-shot to real robotic hardware.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Reinforcement Learning</span>
+          <span class="proj-tag">Sim2Real Transfer</span>
+          <span class="proj-tag">Manipulation</span>
+          <span class="proj-tag">Occlusion Handling</span>
+          <span class="proj-tag">IsaacSim/Lab</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://arxiv.org/abs/2505.16547" target="_blank" class="proj-link">📄 arXiv Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── MPC Navigation ── -->
+    <div class="proj-card">
+      <div class="proj-images">
+        <img src="images/working_of_my_custom_navigation_system.png" alt="MPC Navigation Stack">
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta">
+          <span class="proj-badge">Engineering</span>
+          <span class="proj-year">2023</span>
+        </div>
+        <h2>Full MPC Navigation Stack in ROS 2</h2>
+        <p>MPC-based autonomous navigation stack for wheeled robots built on ROS 2. Implemented in Python with NUMBA JIT acceleration. Uses CasADi framework with the IPOPT solver for real-time optimal path generation and tracking.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">MPC</span><span class="proj-tag">ROS2</span>
+          <span class="proj-tag">CasADi</span><span class="proj-tag">NUMBA</span>
+          <span class="proj-tag">Python</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Optimal Trajectory ── -->
+    <div class="proj-card">
+      <div class="proj-images">
+        <img src="images/robot_trajectory_at_different_timestamps.png" alt="Trajectory Planning">
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta">
+          <span class="proj-badge">B.E. Thesis</span>
+          <span class="proj-year">2022</span>
+        </div>
+        <h2>Optimal Trajectory Generation for Autonomous Navigation of Wheeled Robots</h2>
+        <p>Path planning and optimal trajectory generation for wheeled robot autonomous navigation using MPC. Built on ROS architecture with embedded hardware (Arduino + Raspberry Pi). Complete implementation from algorithm to hardware deployment.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">MPC</span><span class="proj-tag">ROS</span>
+          <span class="proj-tag">Path Planning</span>
+          <span class="proj-tag">Embedded Systems</span>
+        </div>
+        <div class="proj-links">
+          <a href="Final_Project_Report.pdf" target="_blank" class="proj-link">📋 View Report</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Frontier Exploration ── -->
+    <div class="proj-card">
+      <div class="proj-images" style="display:flex;align-items:center;justify-content:center;background:var(--bg3);min-height:220px">
+        <div style="text-align:center;color:var(--text-dim);font-size:3rem">🗺️</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta">
+          <span class="proj-badge">Research</span>
+          <span class="proj-year">2023</span>
+        </div>
+        <h2>Autonomous Environment Exploration Algorithm</h2>
+        <p>Custom frontier-based exploration algorithm for autonomous map creation in ROS 2. Implemented in Python with NUMBA JIT compilation for real-time performance on constrained robotic hardware.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">SLAM</span><span class="proj-tag">Frontier Exploration</span>
+          <span class="proj-tag">ROS2</span><span class="proj-tag">NUMBA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── UAV MPC ── -->
+    <div class="proj-card">
+      <div class="proj-images">
+        <img src="images/uav_path.png" alt="UAV Trajectory">
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta">
+          <span class="proj-badge">Engineering</span>
+          <span class="proj-year">2022</span>
+        </div>
+        <h2>MPC for Autonomous Trajectory Generation of UAV</h2>
+        <p>Autonomous trajectory generation for Unmanned Aerial Vehicles using Model Predictive Control. Implemented using CasADi library in MATLAB, based on full kinematic and dynamic models of the quadrotor UAV.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">UAV</span><span class="proj-tag">MPC</span>
+          <span class="proj-tag">CasADi</span><span class="proj-tag">MATLAB</span>
+        </div>
+        <div class="proj-links">
+          <a href="Project_Report_UAV.pdf" target="_blank" class="proj-link">📋 View Report</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Person Re-ID ── -->
+    <div class="proj-card">
+      <div class="proj-images">
+        <img src="images/tracking.png" alt="Person Tracking">
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta">
+          <span class="proj-badge">Computer Vision</span>
+          <span class="proj-year">2022–2023</span>
+        </div>
+        <h2>Person Re-identification Pipeline</h2>
+        <p>Full person detection, tracking, and re-identification pipeline built with YOLO, DeepSort, and OpenCV. Handles target selection and robust re-identification in dynamic multi-person environments.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">YOLO</span><span class="proj-tag">DeepSort</span>
+          <span class="proj-tag">OpenCV</span><span class="proj-tag">Re-ID</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Robocon ── -->
+    <div class="proj-card">
+      <div class="proj-images">
+        <img src="images/robocon/robocon_2019_robots.jpg" alt="ABU Robocon Robots">
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta">
+          <span class="proj-badge">Competition</span>
+          <span class="proj-year">2018–2021</span>
+        </div>
+        <h2>ABU Robocon — Mechanical Design &amp; Mentoring</h2>
+        <p>Designed, built, and mentored multiple ABU Robocon teams (2018–2021). Participated in international competitions in China, Mongolia, and Vietnam. Responsible for mechanical design, fabrication, and control systems. Won the ROHM Special Award at ABU Robocon 2019 in Mongolia.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Mechanical Design</span>
+          <span class="proj-tag">Robot Fabrication</span>
+          <span class="proj-tag">Control Systems</span>
+          <span class="proj-tag">Mentoring</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Axial Compressor ── -->
+    <div class="proj-card">
+      <div class="proj-images">
+        <img src="images/AxialComp.png" alt="Axial Compressor CFD">
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta">
+          <span class="proj-badge">Mechanical</span>
+          <span class="proj-year">2021</span>
+        </div>
+        <h2>Design and CFD Analysis of an Axial Flow Compressor</h2>
+        <p>Full design and CFD analysis of an axial flow compressor for gas turbine engines using the mean line method. ANSYS Fluent used for steady-state flow simulation and performance validation.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">CFD</span><span class="proj-tag">ANSYS Fluent</span>
+          <span class="proj-tag">Turbomachinery</span><span class="proj-tag">Gas Turbines</span>
+        </div>
+        <div class="proj-links">
+          <a href="AxialComp.pdf" target="_blank" class="proj-link">📋 View Report</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Suspension ── -->
+    <div class="proj-card">
+      <div class="proj-images">
+        <img src="images/susp.png" alt="Suspension System">
+      </div>
+      <div class="proj-body">
+        <div class="proj-meta">
+          <span class="proj-badge">Mechanical</span>
+          <span class="proj-year">2021</span>
+        </div>
+        <h2>Active Hydraulic Suspension System — Design &amp; Control</h2>
+        <p>Kinematic and dynamic analysis of an active hydraulic suspension system. PID control designed and validated via ADAMS–MATLAB Simulink co-simulation. Work extended from an internship at E-bolt Tech involving 2-wheeler suspension analysis.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">PID Control</span><span class="proj-tag">ADAMS</span>
+          <span class="proj-tag">Simulink</span><span class="proj-tag">FEA</span>
+          <span class="proj-tag">SolidWorks</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Nitesh Subedi &nbsp;·&nbsp;
+    <a href="mailto:subedinitesh43@gmail.com">subedinitesh43@gmail.com</a> &nbsp;·&nbsp;
+    <a href="https://github.com/nitesh-subedi" target="_blank">GitHub</a> &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/nitesh-subedi" target="_blank">LinkedIn</a>
+  </p>
 </footer>
+
 </body>
 </html>

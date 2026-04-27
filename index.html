@@ -1,60 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nitesh Subedi</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nitesh Subedi | Robotics & AI Researcher</title>
+  <meta name="description" content="Nitesh Subedi — Robotics & AI Researcher specializing in autonomous navigation, robot learning, and vision-language models.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <span class="nav-logo">Nitesh Subedi</span>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="portfolio.html">Research</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<main>
-    <section class="hero">
-        <h1>🙏 Welcome to my website</h1>
-        <a href="about.html" class="button">Learn more</a>
-    </section>
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge fade-up"><span></span>Open to Research Collaborations</div>
+    <h1 class="fade-up delay-1">
+      <span class="grad">Nitesh Subedi</span>
+    </h1>
+    <p class="hero-subtitle fade-up delay-2">
+      Ph.D. Researcher @ Iowa State University · Autonomous Navigation · Robot Learning · Vision-Language Models
+    </p>
+    <div class="hero-actions fade-up delay-3">
+      <a href="NIteshCV-3.pdf" class="btn btn-primary" target="_blank">
+        ↓ Download CV
+      </a>
+      <a href="portfolio.html" class="btn btn-outline">
+        View Research →
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-arrow"></div>
+    scroll
+  </div>
+</section>
 
-    <section class="hero-info">
+<!-- ── STATS ── -->
+<div class="stats-row">
+  <div class="stat-item">
+    <div class="stat-num">2</div>
+    <div class="stat-label">Publications</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">10+</div>
+    <div class="stat-label">Projects</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">86.7%</div>
+    <div class="stat-label">Success Rate (Plant RL)</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">4×</div>
+    <div class="stat-label">ABU Robocon Teams</div>
+  </div>
+</div>
+
+<!-- ── ABOUT ── -->
+<section class="section">
+  <p class="section-tag">About Me</p>
+  <div class="about-grid">
+    <div>
+      <div class="about-photo">
         <img src="for_bitrix.jpg" alt="Nitesh Subedi">
-        <p>Hi, I am a Mechanical Engineer and currently a Research and Development Engineer at North Star Developer's
-            Village (NSDevil) on NSD-ROBO project. I received my bachelor's in Mechanical Engineering from Pulchowk
-            Campus, IOE, Tribhuvan University in June 2022. I have a deep passion for mechanical and robotics
-            engineering. I
-            love working with robots and autonomous vehicles, experimenting things, how they can be improved, and using
-            what I learn to create new applications and make a difference in the world. On this page, you can find
-            projects I've worked on as well as lessons I've learnt from mentoring others and these projects.</p>
-        <button class="glow-on-hover"><a href="NIteshCV2.pdf">Download CV</a></button>
-        <button class="glow-on-hover"><a href="https://github.com/nitesh-subedi">Visit My Works</a></button>
-    </section>
-</main>
+      </div>
+    </div>
+    <div>
+      <div class="about-badges">
+        <span class="badge highlight">🤖 Robotics</span>
+        <span class="badge highlight">🧠 Robot Learning</span>
+        <span class="badge highlight">👁 Computer Vision</span>
+        <span class="badge">ROS / ROS2</span>
+        <span class="badge">MPC</span>
+        <span class="badge">Sim2Real</span>
+      </div>
+      <div class="about-text">
+        <p>I am a Ph.D. researcher in Mechanical Engineering at <strong style="color:var(--accent)">Iowa State University</strong>, working as a Graduate Research Assistant. My research focuses on reinforcement learning for robotic manipulation, robot navigation using LLMs/VLMs, and model predictive control.</p>
+        <p>I received my B.E. in Mechanical Engineering from Pulchowk Campus, IOE, Tribhuvan University (2022), and worked as an R&amp;D Engineer at NSDeVil (2021–2024) before starting my PhD. I contribute to publications at top robotics venues (RSS, ICRA).</p>
+        <p>From mentoring ABU Robocon teams to building sim2real RL pipelines, I enjoy the full engineering stack — from mechanical design to ML research.</p>
+      </div>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.75rem">
+        <a href="NIteshCV-3.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+        <a href="about.html" class="btn btn-outline">Full Profile →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ── FEATURED RESEARCH ── -->
+<section class="section">
+  <p class="section-tag">Featured Research</p>
+  <h2 class="section-title">Selected Publications &amp; Projects</h2>
+  <p class="section-desc">Recent work in robot learning, autonomous navigation, and perception.</p>
+
+  <div class="featured-grid">
+
+    <!-- LCLA -->
+    <div class="feat-card">
+      <div class="card-badge">arXiv</div>
+      <div class="feat-img">
+        <img src="images/lcla/abstract_fig.png" alt="LCLA Abstract Figure">
+      </div>
+      <div class="feat-body">
+        <div class="feat-tags">
+          <span class="feat-tag">Vision-Language</span>
+          <span class="feat-tag">·</span>
+          <span class="feat-tag">Navigation</span>
+        </div>
+        <h3>LCLA: Language-Conditioned Latent Alignment for Vision-Language Navigation</h3>
+        <p>Aligns sensory observations to a latent representation of an expert policy. Decouples perception from control via a lightweight adapter, enabling expert behavior reuse across different sensing modalities.</p>
+        <div class="feat-links">
+          <a href="https://nitesh-subedi.github.io/LCLA-website/" target="_blank">🌐 Project Page</a>
+          <a href="https://arxiv.org/abs/2602.07629" target="_blank">📄 arXiv</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plant Manipulation -->
+    <div class="feat-card">
+      <div class="card-badge">ICRA 2025</div>
+      <div class="feat-img">
+        <img src="images/plant_manipulation/plants_updated.png" alt="Plant Manipulation">
+      </div>
+      <div class="feat-body">
+        <div class="feat-tags">
+          <span class="feat-tag">Reinforcement Learning</span>
+          <span class="feat-tag">·</span>
+          <span class="feat-tag">Sim2Real</span>
+        </div>
+        <h3>Find the Fruit: Zero-Shot Sim2Real RL for Occlusion-Aware Plant Manipulation</h3>
+        <p>A sim2real RL framework for autonomous harvesting in occluded environments. Achieves 86.7% success rate in exposing target fruits by decoupling kinematic planning from compliant control.</p>
+        <div class="feat-links">
+          <a href="https://arxiv.org/abs/2505.16547" target="_blank">📄 arXiv</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MPC Navigation -->
+    <div class="feat-card">
+      <div class="feat-img">
+        <img src="images/working_of_my_custom_navigation_system.png" alt="MPC Navigation">
+      </div>
+      <div class="feat-body">
+        <div class="feat-tags">
+          <span class="feat-tag">MPC</span>
+          <span class="feat-tag">·</span>
+          <span class="feat-tag">ROS2</span>
+          <span class="feat-tag">·</span>
+          <span class="feat-tag">Autonomous Navigation</span>
+        </div>
+        <h3>Full MPC Navigation Stack in ROS 2</h3>
+        <p>MPC-based navigation stack for wheeled robots using ROS 2, implemented in Python with NUMBA acceleration. CasADi + IPOPT for optimal path generation.</p>
+        <div class="feat-links">
+          <a href="portfolio.html">More Details →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;margin-top:2.5rem">
+    <a href="portfolio.html" class="btn btn-outline">View All Projects →</a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ── SKILLS ── -->
+<section class="section">
+  <p class="section-tag">Expertise</p>
+  <h2 class="section-title">Skills &amp; Tools</h2>
+
+  <div class="skills-grid">
+    <div class="skill-cat">
+      <div class="skill-cat-icon">🤖</div>
+      <h3>Robotics</h3>
+      <div class="skill-list">
+        <span class="skill-pill">ROS</span><span class="skill-pill">ROS2</span>
+        <span class="skill-pill">MPC</span><span class="skill-pill">CasADi</span>
+        <span class="skill-pill">Arduino</span><span class="skill-pill">Raspberry Pi</span>
+        <span class="skill-pill">Jetson Nano</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <div class="skill-cat-icon">🧠</div>
+      <h3>AI / ML</h3>
+      <div class="skill-list">
+        <span class="skill-pill">PyTorch</span><span class="skill-pill">Reinforcement Learning</span>
+        <span class="skill-pill">Sim2Real</span><span class="skill-pill">Vision-Language Models</span>
+        <span class="skill-pill">YOLO</span><span class="skill-pill">DeepSort</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <div class="skill-cat-icon">👁</div>
+      <h3>Computer Vision</h3>
+      <div class="skill-list">
+        <span class="skill-pill">OpenCV</span><span class="skill-pill">Perception</span>
+        <span class="skill-pill">Object Tracking</span><span class="skill-pill">Re-ID</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <div class="skill-cat-icon">💻</div>
+      <h3>Programming</h3>
+      <div class="skill-list">
+        <span class="skill-pill">Python</span><span class="skill-pill">C</span>
+        <span class="skill-pill">C++</span><span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">MATLAB</span><span class="skill-pill">NUMBA</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <div class="skill-cat-icon">⚙️</div>
+      <h3>Mechanical / CAE</h3>
+      <div class="skill-list">
+        <span class="skill-pill">SolidWorks</span><span class="skill-pill">ANSYS</span>
+        <span class="skill-pill">AutoCAD</span><span class="skill-pill">FEA</span>
+        <span class="skill-pill">CFD</span><span class="skill-pill">ADAMS</span>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <div class="skill-cat-icon">📐</div>
+      <h3>Control Systems</h3>
+      <div class="skill-list">
+        <span class="skill-pill">PID Control</span><span class="skill-pill">MPC</span>
+        <span class="skill-pill">IPOPT</span><span class="skill-pill">Simulink</span>
+        <span class="skill-pill">Dynamic Modeling</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer>
-    <div class="social-media">
-        <a href="https://github.com/nitesh-subedi" target="_blank">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
-        </a>
-        <a href="https://www.linkedin.com/in/nitesh-subedi" target="_blank">
-            <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn Logo">
-        </a>
-        <a href="https://www.facebook.com/nitesh.subedi.56" target="_blank">
-            <img src="https://www.vectorlogo.zone/logos/facebook/facebook-official.svg" alt="Facebook Logo">
-        </a>
-        <a href="mailto:subedinitesh43@gmail.com" target="_blank">
-            <img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="gmail-logo">
-        </a>
-        <p><i class="fa fa-phone"></i> +977-9846998395</p>
-
-    </div>
+  <p>© 2026 Nitesh Subedi &nbsp;·&nbsp;
+    <a href="mailto:nitesh@iastate.edu">nitesh@iastate.edu</a> &nbsp;·&nbsp;
+    <a href="https://github.com/nitesh-subedi" target="_blank">GitHub</a> &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/nitesh-subedi" target="_blank">LinkedIn</a>
+  </p>
 </footer>
 
 </body>

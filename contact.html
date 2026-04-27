@@ -1,47 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <!-- Include your CSS and any other necessary stylesheets -->
-    <link rel="stylesheet" href="style_contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Nitesh Subedi</title>
+  <meta name="description" content="Get in touch with Nitesh Subedi — open to research collaborations, opportunities, and discussions.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <span class="nav-logo">Nitesh Subedi</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Research</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-    <main>
-        <section class="contact">
-            <div class="social-media">
-                <h2>Contact Information</h2>
-                <a href="https://github.com/nitesh-subedi" target="_blank">
-                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
-                </a>
-                <a href="https://www.linkedin.com/in/nitesh-subedi" target="_blank">
-                    <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn Logo">
-                </a>
-                <a href="https://www.facebook.com/nitesh.subedi.56" target="_blank">
-                    <img src="https://www.vectorlogo.zone/logos/facebook/facebook-official.svg" alt="Facebook Logo">
-                </a>
-                <a href="mailto:subedinitesh43@gmail.com" target="_blank">
-                    <img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="Gmail Logo">
-                </a>
-                <p><i class="fa fa-phone"></i> +977-9846998395</p>
-            </div>
-        </section>
-    </main>
+<div style="padding-top:5rem"></div>
 
-    <footer>
-        <!-- Include any footer content you may have -->
-    </footer>
+<div class="section">
+  <p class="section-tag">Contact</p>
+  <h1 class="section-title">Get In Touch</h1>
+  <p class="section-desc">Open to research collaborations, PhD opportunities, and interesting discussions in robotics and AI.</p>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h2>Let's Connect</h2>
+      <p>Whether you have a research idea, want to collaborate, or just want to say hello — my inbox is always open.</p>
+
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div class="contact-item-text">
+            <span>Email (ISU)</span>
+            <a href="mailto:nitesh@iastate.edu">nitesh@iastate.edu</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📨</div>
+          <div class="contact-item-text">
+            <span>Email (Personal)</span>
+            <a href="mailto:subedinitesh43@gmail.com">subedinitesh43@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📱</div>
+          <div class="contact-item-text">
+            <span>Phone</span>
+            <a href="tel:+15154419622">(+1) 515-441-9622</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <span>Location</span>
+            <a>Ames, Iowa, USA</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📄</div>
+          <div class="contact-item-text">
+            <span>CV / Resume</span>
+            <a href="NIteshCV-3.pdf" target="_blank">Download PDF →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-social">
+        <h3>Find Me Online</h3>
+        <div class="social-row">
+          <a href="https://github.com/nitesh-subedi" target="_blank" class="social-btn">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/nitesh-subedi" target="_blank" class="social-btn">
+            <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn">
+            LinkedIn
+          </a>
+          <a href="https://www.facebook.com/nitesh.subedi.56" target="_blank" class="social-btn">
+            <img src="https://www.vectorlogo.zone/logos/facebook/facebook-official.svg" alt="Facebook">
+            Facebook
+          </a>
+          <a href="https://arxiv.org/search/?query=nitesh+subedi&searchtype=author" target="_blank" class="social-btn">
+            📄 arXiv
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:2rem">
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:1.5rem;color:var(--accent)">Areas of Interest</h3>
+        <div style="display:flex;flex-direction:column;gap:0.75rem">
+          <div style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:var(--surface);border-radius:0.5rem">
+            <span style="font-size:1.3rem">🤖</span>
+            <div>
+              <div style="font-weight:600;font-size:0.9rem">Autonomous Navigation</div>
+              <div style="color:var(--text-dim);font-size:0.8rem">Mobile robots, path planning, MPC</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:var(--surface);border-radius:0.5rem">
+            <span style="font-size:1.3rem">🧠</span>
+            <div>
+              <div style="font-weight:600;font-size:0.9rem">Robot Learning</div>
+              <div style="color:var(--text-dim);font-size:0.8rem">Reinforcement learning, sim2real, imitation</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:var(--surface);border-radius:0.5rem">
+            <span style="font-size:1.3rem">👁</span>
+            <div>
+              <div style="font-weight:600;font-size:0.9rem">Vision-Language Models</div>
+              <div style="color:var(--text-dim);font-size:0.8rem">VLMs for robotic control and navigation</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:var(--surface);border-radius:0.5rem">
+            <span style="font-size:1.3rem">🦾</span>
+            <div>
+              <div style="font-weight:600;font-size:0.9rem">Manipulation</div>
+              <div style="color:var(--text-dim);font-size:0.8rem">Dexterous manipulation, agricultural robotics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Nitesh Subedi &nbsp;·&nbsp;
+    <a href="mailto:nitesh@iastate.edu">nitesh@iastate.edu</a> &nbsp;·&nbsp;
+    <a href="https://github.com/nitesh-subedi" target="_blank">GitHub</a> &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/nitesh-subedi" target="_blank">LinkedIn</a>
+  </p>
+</footer>
+
 </body>
 </html>
