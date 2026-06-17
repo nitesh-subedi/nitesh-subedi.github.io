@@ -4,8 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nitesh Subedi | Robotics & AI Researcher</title>
-  <meta name="description" content="Nitesh Subedi — Robotics & AI Researcher specializing in autonomous navigation, robot learning, and vision-language models.">
+  <meta name="description" content="Nitesh Subedi — Ph.D. researcher at Iowa State University working on autonomous navigation, robot learning, and vision-language models.">
+  <link rel="canonical" href="https://nitesh-subedi.github.io/">
+  <meta name="theme-color" content="#080b11">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nitesh-subedi.github.io/">
+  <meta property="og:title" content="Nitesh Subedi | Robotics & AI Researcher">
+  <meta property="og:description" content="Ph.D. researcher at Iowa State University — autonomous navigation, robot learning, and vision-language models.">
+  <meta property="og:image" content="https://nitesh-subedi.github.io/for_bitrix.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Nitesh Subedi",
+    "url":"https://nitesh-subedi.github.io/",
+    "image":"https://nitesh-subedi.github.io/for_bitrix.jpg",
+    "jobTitle":"Ph.D. Researcher",
+    "email":"nitesh@iastate.edu",
+    "affiliation":{"@type":"CollegeOrUniversity","name":"Iowa State University"},
+    "alumniOf":"Tribhuvan University, Institute of Engineering, Pulchowk Campus",
+    "knowsAbout":["Robotics","Reinforcement Learning","Autonomous Navigation","Model Predictive Control","Vision-Language Models","Computer Vision"],
+    "sameAs":["https://github.com/nitesh-subedi","https://www.linkedin.com/in/nitesh-subedi"]
+  }
+  </script>
 </head>
 <body>
 
@@ -24,6 +48,14 @@
 <!-- ── HERO ── -->
 <section class="hero">
   <div class="hero-bg"></div>
+  <svg class="hero-traj" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path class="traj-ref" d="M-50 760 C 300 760, 360 420, 680 430 S 1080 250, 1490 200"/>
+    <path class="traj-path" d="M-50 780 C 300 780, 360 400, 700 440 S 1080 230, 1490 170"/>
+    <circle class="waypt" cx="300" cy="690" r="5" style="animation-delay:1.1s"/>
+    <circle class="waypt" cx="700" cy="440" r="5" style="animation-delay:2.0s"/>
+    <circle class="waypt" cx="1040" cy="300" r="5" style="animation-delay:2.9s"/>
+    <circle class="waypt" cx="1340" cy="200" r="5" style="animation-delay:3.5s"/>
+  </svg>
   <div class="hero-content">
     <div class="hero-badge fade-up"><span></span>Open to Research Collaborations</div>
     <h1 class="fade-up delay-1">
@@ -59,11 +91,11 @@
   </div>
   <div class="stat-item">
     <div class="stat-num">86.7%</div>
-    <div class="stat-label">Success Rate (Plant RL)</div>
+    <div class="stat-label">Sim2Real Success</div>
   </div>
   <div class="stat-item">
     <div class="stat-num">4×</div>
-    <div class="stat-label">ABU Robocon Teams</div>
+    <div class="stat-label">Robocon Campaigns</div>
   </div>
 </div>
 
@@ -112,7 +144,7 @@
     <div class="feat-card">
       <div class="card-badge">arXiv</div>
       <div class="feat-img">
-        <img src="images/lcla/abstract_fig.png" alt="LCLA Abstract Figure">
+        <img src="images/lcla/abstract_fig.png" alt="LCLA Abstract Figure" loading="lazy" decoding="async">
       </div>
       <div class="feat-body">
         <div class="feat-tags">
@@ -133,7 +165,7 @@
     <div class="feat-card">
       <div class="card-badge">ICRA 2026</div>
       <div class="feat-img">
-        <img src="images/plant_manipulation/plants_updated.png" alt="Plant Manipulation">
+        <img src="images/plant_manipulation/plants_updated.png" alt="Plant Manipulation" loading="lazy" decoding="async">
       </div>
       <div class="feat-body">
         <div class="feat-tags">
@@ -152,7 +184,7 @@
     <!-- MPC Navigation -->
     <div class="feat-card">
       <div class="feat-img">
-        <img src="images/working_of_my_custom_navigation_system.png" alt="MPC Navigation">
+        <img src="images/working_of_my_custom_navigation_system.png" alt="MPC Navigation" loading="lazy" decoding="async">
       </div>
       <div class="feat-body">
         <div class="feat-tags">
@@ -250,5 +282,6 @@
   </p>
 </footer>
 
+<script src="app.js" defer></script>
 </body>
 </html>

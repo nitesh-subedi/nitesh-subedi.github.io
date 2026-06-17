@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#080b11"/>
+  <path d="M8 8h48M8 24h48M8 40h48M8 56h48M8 8v48M24 8v48M40 8v48M56 8v48" stroke="#1c2b3e" stroke-width="1"/>
+  <text x="32" y="44" font-family="'JetBrains Mono',monospace" font-size="30" font-weight="700" text-anchor="middle" fill="#38bdf8">NS</text>
+</svg>
