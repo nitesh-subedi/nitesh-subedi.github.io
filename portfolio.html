@@ -56,13 +56,14 @@
           <span class="proj-year">2025–2026</span>
         </div>
         <h2>LCLA: Language-Conditioned Latent Alignment for Vision-Language Navigation</h2>
-        <p>A framework for vision-language navigation that aligns sensory observations to a latent representation of an expert policy. The method decouples perception from control through a lightweight adapter, enabling expert behavior reuse across different sensing modalities and environments without full retraining. Achieves generalizable robot navigation guided by natural language instructions.</p>
+        <p>A framework for vision-language navigation that decouples perception from control by aligning frozen vision-language embeddings to the latent space of a frozen privileged expert policy. A lightweight adapter is trained by supervised latent alignment instead of end-to-end policy learning, so the expert controller is reused directly from pixels and language. In an unseen environment it raises success from 49.3% to 80.5% over behavior cloning and cuts collisions from 45.0% to 15.5%. Deployed zero-shot on a real TurtleBot with no fine-tuning, it reaches 70.7% success versus 60.9% for a navigation-pretrained baseline and 40.2% for behavior cloning.</p>
         <div class="proj-tags">
           <span class="proj-tag">Vision-Language Models</span>
           <span class="proj-tag">Robot Navigation</span>
           <span class="proj-tag">Imitation Learning</span>
           <span class="proj-tag">Latent Alignment</span>
-          <span class="proj-tag">PyTorch</span>
+          <span class="proj-tag">Sim2Real</span>
+          <span class="proj-tag">Isaac Sim/Lab</span>
         </div>
         <div class="proj-links">
           <a href="https://nitesh-subedi.github.io/LCLA-website/" target="_blank" rel="noopener" class="proj-link">Project website</a>
