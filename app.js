@@ -1,26 +1,48 @@
-// Progressive enhancement: scroll reveals + telemetry-style stat count-up.
+// Progressive enhancement: frosted-nav scroll state, scroll reveals, image zoom-in, stat count-up.
 // No-JS or reduced-motion users get the final, fully-visible state immediately
 // (we only add the hiding .reveal class when we know we can animate it back).
 (function () {
   if (typeof document === 'undefined') return;   // node self-check only
+
+  // ── Frosted nav deepens once the page scrolls ──
+  const header = document.querySelector('header');
+  if (header) {
+    const onScroll = () => header.classList.toggle('scrolled', scrollY > 8);
+    addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.documentElement.classList.add('js-motion');   // enables .zoom-in hidden state
 
   // ── Scroll reveals (staggered per batch entering the viewport) ──
   const items = document.querySelectorAll(
-    '.section-tag, .section-title, .section-desc, .about-grid, ' +
-    '.feat-card, .proj-card, .skill-cat, .tl-item, .contact-item, .proj-group-tag'
+    '.section-tag, .section-title, .section-desc, .spotlight-head, .spotlight-points > *, ' +
+    '.tile, .proj-card, .tl-item, .contact-grid > *, .proj-group-tag, .editorial-grid > *, ' +
+    '.award-grid > li, .detail-list, .about-text, .cta-band > *'
   );
   items.forEach(el => el.classList.add('reveal'));
+  // .zoom-in elements are hidden via .js-motion in CSS; observe them too.
+  const zooms = document.querySelectorAll('.zoom-in');
   const io = new IntersectionObserver((entries, obs) => {
     let i = 0;
     for (const e of entries) {
       if (!e.isIntersecting) continue;
-      e.target.style.transitionDelay = (i++ * 60) + 'ms';
-      e.target.classList.add('in');
+      const el = e.target;
+      el.style.transitionDelay = (i++ * 60) + 'ms';
+      el.classList.add('in');
+      // Once revealed, drop the helper classes so hover transforms/timings apply normally.
+      el.addEventListener('transitionend', function done(ev) {
+        if (ev.target !== el || ev.propertyName !== 'transform') return;
+        el.style.transitionDelay = '';
+        el.classList.remove('reveal');
+        el.removeEventListener('transitionend', done);
+      });
       obs.unobserve(e.target);
     }
   }, { threshold: 0.12 });
   items.forEach(el => io.observe(el));
+  zooms.forEach(el => io.observe(el));
 
   // ── Stat count-up ──
   const statIO = new IntersectionObserver((entries, obs) => {

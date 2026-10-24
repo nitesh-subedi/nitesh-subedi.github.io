@@ -6,7 +6,7 @@
   <title>Nitesh Subedi | Robotics &amp; AI Researcher</title>
   <meta name="description" content="Nitesh Subedi — Ph.D. researcher at Iowa State University working on autonomous navigation, robot learning, and vision-language models.">
   <link rel="canonical" href="https://nitesh-subedi.github.io/">
-  <meta name="theme-color" content="#080b11">
+  <meta name="theme-color" content="#161617">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nitesh-subedi.github.io/">
@@ -45,9 +45,19 @@
 </header>
 
 <main>
+  <div class="ribbon"><p>LCLA has been accepted to <strong>CoRL 2026</strong>. <a href="#lcla">Learn more</a></p></div>
+
   <section class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
     <svg class="hero-traj" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="trajGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#2997ff"/>
+          <stop offset="0.45" stop-color="#8e6cff"/>
+          <stop offset="0.75" stop-color="#e05cc4"/>
+          <stop offset="1" stop-color="#ff8a5c"/>
+        </linearGradient>
+      </defs>
       <path class="traj-ref" d="M-50 760 C 300 760, 360 420, 680 430 S 1080 250, 1490 200"/>
       <path class="traj-path" d="M-50 780 C 300 780, 360 400, 700 440 S 1080 230, 1490 170"/>
       <circle class="waypt" cx="300" cy="690" r="5"/>
@@ -56,107 +66,136 @@
       <circle class="waypt" cx="1340" cy="200" r="5"/>
     </svg>
     <div class="hero-content">
-      <div class="hero-badge fade-up"><span></span>Open to research collaborations</div>
+      <p class="hero-eyebrow fade-up">Nitesh Subedi · Ph.D. Researcher, Iowa State University</p>
       <h1 class="fade-up delay-1"><span class="grad">Robots that perceive, reason, and act.</span></h1>
-      <p class="hero-subtitle fade-up delay-2">Nitesh Subedi is a Ph.D. researcher at Iowa State University advancing autonomous navigation, robot learning, and vision-language systems.</p>
+      <p class="hero-subtitle fade-up delay-2">Advancing autonomous navigation, robot learning, and vision-language systems, from simulation to real hardware.</p>
       <div class="hero-actions fade-up delay-3">
         <a href="portfolio.html" class="btn btn-primary">Explore research</a>
-        <a href="NIteshCV-3.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download CV</a>
+        <a href="NIteshCV-3.pdf" class="link-more" target="_blank" rel="noopener">Download CV</a>
       </div>
     </div>
-    <div class="hero-scroll"><div class="hero-scroll-arrow"></div>Selected work</div>
   </section>
 
-  <section class="stats-row" aria-label="Research highlights">
-    <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Publications</div></div>
-    <div class="stat-item"><div class="stat-num">10+</div><div class="stat-label">Projects</div></div>
-    <div class="stat-item"><div class="stat-num">86.7%</div><div class="stat-label">Sim2Real Success</div></div>
-    <div class="stat-item"><div class="stat-num">4×</div><div class="stat-label">Robocon Campaigns</div></div>
+  <div class="stats-wrap">
+    <section class="stats-row" aria-label="Research highlights">
+      <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Publications</div></div>
+      <div class="stat-item"><div class="stat-num">10+</div><div class="stat-label">Projects</div></div>
+      <div class="stat-item"><div class="stat-num">4×</div><div class="stat-label">Robocon Campaigns</div></div>
+    </section>
+  </div>
+
+  <section class="spotlight surface-paper" id="lcla">
+    <div class="spotlight-head">
+      <p class="venue-pill new">New · Accepted at CoRL 2026</p>
+      <h2 class="spotlight-title">LCLA</h2>
+      <p class="spotlight-sub">Language-Conditioned Latent Alignment for vision-language navigation.</p>
+      <div class="spotlight-links">
+        <a href="https://nitesh-subedi.github.io/LCLA-website/" class="btn btn-primary" target="_blank" rel="noopener">Project page</a>
+        <a href="https://arxiv.org/abs/2602.07629" class="link-more" target="_blank" rel="noopener">Read on arXiv</a>
+      </div>
+    </div>
+    <figure class="spotlight-media zoom-in">
+      <img src="images/lcla/abstract_fig.png" alt="LCLA framework: VLM features are aligned to the latent space of a trained privileged policy by training only a lightweight adapter" loading="lazy" decoding="async">
+    </figure>
+    <div class="spotlight-points">
+      <p><strong>Align, don’t retrain.</strong>VLM image and text features are mapped into the latent space of a trained privileged policy.</p>
+      <p><strong>Just train the adapter.</strong>A lightweight adapter decouples perception from control while the expert policy stays frozen.</p>
+      <p><strong>Reuse expert behavior.</strong>The same expert transfers across sensing modalities and environments, guided by natural language.</p>
+    </div>
+  </section>
+
+  <section class="spotlight surface-dark">
+    <div class="spotlight-head">
+      <p class="venue-pill">ICRA 2026</p>
+      <h2 class="spotlight-title grad-silver">Find the Fruit.</h2>
+      <p class="spotlight-sub">Zero-shot sim2real reinforcement learning for occlusion-aware plant manipulation.</p>
+      <div class="spotlight-links">
+        <a href="https://ieeexplore.ieee.org/abstract/document/11697316" class="btn btn-primary" target="_blank" rel="noopener">Read on IEEE Xplore</a>
+        <a href="https://arxiv.org/abs/2505.16547" class="link-more" target="_blank" rel="noopener">arXiv preprint</a>
+      </div>
+    </div>
+    <figure class="spotlight-media zoom-in">
+      <img src="images/plant_manipulation/plants_updated.png" alt="The five plant types used to evaluate occlusion-aware fruit exposure" loading="lazy" decoding="async">
+    </figure>
+    <div class="spotlight-points">
+      <p><span class="big-stat grad">Occlusion-aware</span>manipulation that exposes target fruits hidden behind foliage.</p>
+      <p><span class="big-stat grad">Zero-shot</span>transfer: the policy trains entirely in simulation.</p>
+      <p><span class="big-stat grad">Decoupled</span>kinematic planning and compliant low-level control.</p>
+    </div>
   </section>
 
   <section class="surface-light">
+    <div class="section-inner wide center">
+      <p class="section-tag">Engineering breadth</p>
+      <h2 class="section-title">Research grounded in complete robotic systems.</h2>
+      <p class="section-desc">From dynamics and control through perception and learning, with deployment as the final test.</p>
+      <div class="bento">
+        <a class="tile span-4" href="portfolio.html">
+          <div class="tile-body">
+            <p class="eyebrow">Control</p>
+            <h3>Full MPC navigation stack.</h3>
+            <p>ROS 2 navigation using CasADi, IPOPT, and NUMBA acceleration for real-time optimal path generation and tracking.</p>
+          </div>
+          <div class="tile-media cover"><img src="images/working_of_my_custom_navigation_system.png" alt="MPC navigation stack in action" loading="lazy" decoding="async"></div>
+        </a>
+        <a class="tile span-2 dark" href="portfolio.html">
+          <div class="tile-body">
+            <p class="eyebrow">Perception</p>
+            <h3>Computer vision.</h3>
+            <p>Detection, tracking, and person re-identification with YOLO, DeepSort, and OpenCV.</p>
+          </div>
+          <div class="tile-media cover"><img src="images/tracking.png" alt="Person detection and tracking" loading="lazy" decoding="async"></div>
+        </a>
+        <a class="tile span-2" href="portfolio.html">
+          <div class="tile-body">
+            <p class="eyebrow">Aerial</p>
+            <h3>MPC for UAVs.</h3>
+            <p>Trajectory generation from full quadrotor kinematic and dynamic models.</p>
+          </div>
+          <div class="tile-media"><img src="images/uav_path.png" alt="UAV trajectory generated with MPC" loading="lazy" decoding="async"></div>
+        </a>
+        <a class="tile span-4 dark" href="portfolio.html">
+          <div class="tile-body">
+            <p class="eyebrow">Hardware</p>
+            <h3>Four ABU Robocon campaigns.</h3>
+            <p>Robot design, fabrication, and controls. Competed in China, Mongolia, and Vietnam, and won the ROHM Special Award in 2019.</p>
+          </div>
+          <div class="tile-media cover"><img src="images/robocon/robocon_2019_robots.jpg" alt="ABU Robocon 2019 robots" loading="lazy" decoding="async"></div>
+        </a>
+      </div>
+      <div class="bento-cta"><a href="portfolio.html" class="link-more">View all research and projects</a></div>
+    </div>
+  </section>
+
+  <section class="surface-paper">
     <div class="section-inner">
       <div class="about-grid">
-        <div class="about-photo"><img src="for_bitrix.jpg" alt="Nitesh Subedi" loading="lazy" decoding="async"></div>
+        <div class="about-photo zoom-in"><img src="for_bitrix.jpg" alt="Nitesh Subedi" loading="lazy" decoding="async"></div>
         <div>
-          <p class="section-tag">Research focus</p>
+          <p class="section-tag">Meet the researcher</p>
           <h2 class="section-title">From mechanical systems to embodied intelligence.</h2>
           <div class="about-text">
             <p>I am a Ph.D. researcher in Mechanical Engineering at <strong>Iowa State University</strong> and a Graduate Research Assistant. My work spans reinforcement learning for robotic manipulation, robot navigation using LLMs and VLMs, and model predictive control.</p>
-            <p>Before starting my Ph.D., I worked as an R&amp;D Engineer at NSDeVil on autonomous navigation for wheeled robots. My engineering background connects mechanical design, controls, perception, and learning.</p>
+            <p>Before my Ph.D., I worked as an R&amp;D Engineer at NSDeVil on autonomous navigation for wheeled robots.</p>
           </div>
           <div class="about-badges" aria-label="Research areas">
             <span class="badge highlight">Robot learning</span>
             <span class="badge highlight">Autonomous navigation</span>
             <span class="badge highlight">Vision-language models</span>
           </div>
-          <a href="about.html" class="btn btn-outline">Read full profile</a>
+          <a href="about.html" class="link-more">Read full profile</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="research-feature surface-paper">
-    <div class="research-media">
-      <img src="images/lcla/abstract_fig.png" alt="LCLA framework aligning sensory observations with an expert policy" loading="lazy" decoding="async">
-    </div>
-    <div class="research-copy">
-      <p class="section-tag">Vision-language navigation · arXiv</p>
-      <h2>LCLA: Language-Conditioned Latent Alignment</h2>
-      <p>Aligns sensory observations to a latent representation of an expert policy. A lightweight adapter decouples perception from control, enabling expert behavior reuse across sensing modalities.</p>
-      <div class="feat-links">
-        <a href="https://nitesh-subedi.github.io/LCLA-website/" target="_blank" rel="noopener">Project page</a>
-        <a href="https://arxiv.org/abs/2602.07629" target="_blank" rel="noopener">Read on arXiv</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="research-feature reverse surface-dark blueprint">
-    <div class="research-media">
-      <img src="images/plant_manipulation/plants_updated.png" alt="Robot exposing fruit in an occluded plant environment" loading="lazy" decoding="async">
-    </div>
-    <div class="research-copy">
-      <p class="section-tag">Robot learning · ICRA 2026</p>
-      <h2>Find the Fruit</h2>
-      <p>A zero-shot sim2real reinforcement learning framework for occlusion-aware plant manipulation. By separating kinematic planning from compliant control, the system achieves an 86.7% success rate in exposing target fruits.</p>
-      <div class="feat-links">
-        <a href="https://arxiv.org/abs/2505.16547" target="_blank" rel="noopener">Read on arXiv</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="surface-light">
-    <div class="section-inner">
-      <p class="section-tag">Engineering breadth</p>
-      <h2 class="section-title">Research grounded in complete robotic systems.</h2>
-      <p class="section-desc">Work moves from dynamics and control through perception and learning, with deployment as the final test.</p>
-      <div class="editorial-grid">
-        <article>
-          <p class="section-tag">Control</p>
-          <h3>Full MPC Navigation Stack</h3>
-          <p>ROS 2 navigation using CasADi, IPOPT, Python, and NUMBA acceleration for optimal path generation and tracking.</p>
-        </article>
-        <article>
-          <p class="section-tag">Perception</p>
-          <h3>Computer Vision</h3>
-          <p>Object detection, tracking, person re-identification, and visual perception using PyTorch, YOLO, DeepSort, and OpenCV.</p>
-        </article>
-        <article>
-          <p class="section-tag">Hardware</p>
-          <h3>Mechanical Systems</h3>
-          <p>Robot design, fabrication, embedded systems, controls, and four ABU Robocon campaigns.</p>
-        </article>
-      </div>
-      <a href="portfolio.html" class="btn btn-outline">View all research and projects</a>
-    </div>
-  </section>
-
   <section class="cta-band">
-    <div>
-      <h2>Building intelligent systems for difficult environments.</h2>
-      <p>Interested in research collaborations across robotics, autonomous navigation, manipulation, and embodied AI.</p>
+    <h2>Let’s build robots for <span class="grad">difficult environments.</span></h2>
+    <p>Open to research collaborations across robotics, autonomous navigation, manipulation, and embodied AI.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn">Start a conversation</a>
+      <a href="NIteshCV-3.pdf" class="link-more" target="_blank" rel="noopener">Download CV</a>
     </div>
-    <a href="contact.html" class="btn">Start a conversation</a>
   </section>
 </main>
 
